@@ -6,13 +6,13 @@ window.addEventListener("scroll", (event) => {
     let top = window.scrollY;
     listBg.forEach((bg, index) => {
         if (index != 0 && index != 8) {
-            bg.style.transform = `translateY(${top * index / 2}px)`;
+            bg.style.transform = translateY(${top * index / 2}px);
         } else if (index == 0) {
-            bg.style.transform = `translateY(${top / 3}px)`;
+            bg.style.transform = translateY(${top / 3}px);
         }
     });
     if (titleBanner) {
-        titleBanner.style.transform = `translateY(${top * 4 / 2}px)`;
+        titleBanner.style.transform = translateY(${top * 4 / 2}px);
     }
     listTab.forEach(tab => {
         if (tab.offsetTop - top < 550) {
